@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensures the page is responsive and scales properly on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Wassup chat app</title>
+    <!-- Link to an external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Main section for the chat interface -->
+    <section class="chat__section">
+        <!-- Brand area displaying the logo and app name -->
+        <div class="brand">
+            <!-- Logo image with a specified height -->
+            <img height="40" src="/wassup.png" alt="">
+            <!-- Application name -->
+            <h1>Wassup</h1>
+        </div>
+        <!-- Area where chat messages will be displayed -->
+        <div class="message__area"></div>
+        <!-- Input area for writing and sending messages -->
+        <div>
+            <!-- Textarea for users to type their messages -->
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+
+    <!-- Importing the Socket.io library for real-time communication -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Link to an external JavaScript file for client-side functionality -->
+    <script src="/client.js"></script>
+</body>
+</html>
